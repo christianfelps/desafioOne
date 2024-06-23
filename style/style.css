@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  justify-content: space-between;
+
+}
+
+.conteudo {
+  margin-top: 100px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.conteudo__digite {
+  width: 100%;
+  height: 30%;
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 17);
+  resize: none;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 2rem;
+}
+
+.conteudo__digite::placeholder {
+  font-size: 2rem;
+  
+}
+
+.conteudo__botoes {
+  margin-top: 30%;
+  display: flex;
+  gap: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  justify-content: center;
+}
+
+#button_criptografar {
+  background-color: #0A3871;
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  border-radius: 24px;
+  color: #fff;
+}
+
+#button_descriptografar {
+  background-color: #D8DFE8;
+
+  width: 328px;
+  height: 67px;
+  padding: 24px;
+  border-radius: 24px;
+  border: solid 1px #0A3871;
+}
+
+
+
+.conteudo__direita {
+  /* margin: 5% 0 5% 15%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  background-color: white;
+  width: 35%;
+  height: 944px;
+  border-radius: 32px;
+}
+
+.conteudo__direita__mensagem {
+  width: 90%;
+  text-align: center;
+  margin: 15px;
+}
+
+.conteudo__direita__mensagem p {
+  font-size: 1rem;
+}
+
+img {
+  margin-bottom: 30%;
+  height: 335.98px;
+  width: 90%;
+
+}
+
+
+@media(max-width: 1200px) {
+  main {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .conteudo__direita {
+    width: 90%;
+    height: 40%;
+  }
+
+  .conteudo {
+
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .conteudo__digite {
+    font-size: 1rem;
+    align-items: center;
+
+  }
+
+  .conteudo__digite::placeholder {
+    font-size: 1rem;
+    align-items: center;
+  }
+
+
+
+
+
+
+  img {
+    display: none;
+  }
+}
